@@ -1,0 +1,2028 @@
+{
+ "cohort_size": 42,
+ "unreadable": [],
+ "concepts": {
+  "review": {
+   "bazaarvoice": {
+    "segments": [
+     "reviews",
+     "review"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "limit": "integer",
+     "offset": "integer",
+     "sort": "object",
+     "fields": "array",
+     "filters": "object",
+     "Limit": "number",
+     "Offset": "number",
+     "TotalResults": "number",
+     "Locale": "string",
+     "Results": "array",
+     "Includes": "object",
+     "HasErrors": "boolean",
+     "Errors": "array",
+     "department": "string",
+     "response": "string",
+     "responseBy": "string",
+     "responseSource": "string",
+     "responderClient": "string",
+     "created": "integer",
+     "updated": "integer",
+     "type": "string",
+     "id": "string",
+     "clientName": "string"
+    },
+    "evidence": [
+     "openapi/_original/bazaarvoice-content-search-openapi.json#GET /reviews/{legacyInternalId}",
+     "openapi/_original/bazaarvoice-content-search-openapi.json#GET /{clientId}/reviews/{legacyInternalId}",
+     "openapi/_original/bazaarvoice-content-search-openapi.json#POST /reviews",
+     "openapi/_original/bazaarvoice-content-search-openapi.json#POST /{clientId}/reviews",
+     "openapi/_original/bazaarvoice-conversations-display-openapi.json#GET /data/reviews.json",
+     "openapi/_original/bazaarvoice-conversations-display-openapi.yml#GET /data/reviews.json",
+     "openapi/_original/bazaarvoice-response-openapi.json#GET /response/v1/clientResponses/{client}/reviews/{reviewId}",
+     "openapi/_original/bazaarvoice-response-openapi.json#GET /response/v1/clientResponses/{responseGuid}/relationships/review",
+     "openapi/_original/bazaarvoice-response-openapi.json#GET /response/v1/clientResponses/{responseGuid}/review",
+     "openapi/_original/bazaarvoice-response-openapi.json#POST /response/v1/clientResponses/{client}/reviews/{reviewId}",
+     "openapi/_original/bazaarvoice-response-openapi.yml#GET /response/v1/clientResponses/{client}/reviews/{reviewId}",
+     "openapi/_original/bazaarvoice-response-openapi.yml#GET /response/v1/clientResponses/{responseGuid}/relationships/review"
+    ]
+   },
+   "birdeye": {
+    "segments": [
+     "review"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "tags": "array",
+     "businessNumbers": "array",
+     "fromDate": "string",
+     "toDate": "string",
+     "sources": "array",
+     "brandIds": "array",
+     "competitorLocationIds": "array",
+     "reviewIds": "array",
+     "updateFromDate": "string",
+     "updateToDate": "string",
+     "ratings": "string",
+     "keywords": "string",
+     "searchStr": "string",
+     "subBusinessIds": "string",
+     "businessLocations": "array",
+     "competitorLocation": "string",
+     "competitorBrand": "string",
+     "source": "string",
+     "rating": "number",
+     "reviewComment": "string",
+     "reviewerName": "string",
+     "reviewDate": "string",
+     "reply": "string"
+    },
+    "evidence": [
+     "openapi/_original/birdeye-birdeye-api-openapi.yml#POST /v1/competitors/review",
+     "openapi/_original/birdeye-birdeye-api-openapi.yml#POST /v1/tag/add/review",
+     "openapi/_original/birdeye-birdeye-api-openapi.yml#POST /v1/tag/remove/all/review",
+     "openapi/_original/birdeye-birdeye-api-openapi.yml#POST /v1/tag/remove/review",
+     "openapi/_original/birdeye-openapi-original.yml#POST /v1/competitors/review",
+     "openapi/_original/birdeye-openapi-original.yml#POST /v1/tag/add/review",
+     "openapi/_original/birdeye-openapi-original.yml#POST /v1/tag/remove/all/review",
+     "openapi/_original/birdeye-openapi-original.yml#POST /v1/tag/remove/review"
+    ]
+   },
+   "das-technology": {
+    "segments": [
+     "review"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "reviewGuid": "string",
+     "reviewSourceId": "integer",
+     "accountGuid": "string",
+     "externalId": "string",
+     "reviewSiteId": "integer",
+     "created": "string",
+     "modified": "string",
+     "reviewDate": "string",
+     "reviewScore": "number",
+     "reviewerName": "string",
+     "reviewerCity": "string",
+     "reviewerState": "string",
+     "reviewerCountry": "string",
+     "reviewUrl": "string",
+     "reviewTitle": "string",
+     "reviewComment": "string",
+     "aylienException": "boolean",
+     "accountId": "integer",
+     "isClosedLoop": "boolean",
+     "surveyResponseId": "integer",
+     "softDeleteDateUTC": "string",
+     "account": "object",
+     "reviewSite": "object",
+     "reviewSource": "object",
+     "reviewClassifications": "array",
+     "reviewResponses": "array",
+     "categories": "array",
+     "surveyResponse": "object",
+     "reviewCategoryDispositions": "array",
+     "reviewId": "string",
+     "reviewType": "string",
+     "source": "string",
+     "lastUpdatedDate": "string",
+     "lastUpdatedBy": "string",
+     "createdBy": "string",
+     "dealerGuid": "string",
+     "dealerName": "string",
+     "reviewSurgeResponseId": "string",
+     "siteId": "string",
+     "siteName": "string",
+     "rating": "string",
+     "comment": "string",
+     "city": "string",
+     "state": "string",
+     "responseDate": "string",
+     "disputedReview": "boolean",
+     "createdDate": "string",
+     "country": "string",
+     "district": "string",
+     "averageRating": "number",
+     "averageTotalCount": "integer",
+     "positiveCount": "integer",
+     "neutralCount": "integer",
+     "negativeCount": "integer",
+     "positiveRespondedCount": "integer",
+     "positiveNotRespondedCount": "integer",
+     "negativeRespondedCount": "integer",
+     "negativeNotRespondedCount": "integer",
+     "positivePercentage": "number",
+     "neutralPercentage": "number",
+     "negativePercentage": "number",
+     "reviewStatsSources": "array",
+     "reviewStatsStates": "array",
+     "siteRatings": "array"
+    },
+    "evidence": [
+     "openapi/_original/das-technology-daswebapi-v1-openapi.yml#GET /v1/account/{accountGuid}/review",
+     "openapi/_original/das-technology-daswebapi-v1-openapi.yml#GET /v1/review/{reviewGuid}",
+     "openapi/_original/das-technology-daswebapi-v1-openapi.yml#GET /v1/stats/review",
+     "openapi/_original/das-technology-daswebapi-v1-openapi.yml#POST /v1/review",
+     "openapi/_original/das-technology-daswebapi-v1-swagger.json#GET /v1/account/{accountGuid}/review",
+     "openapi/_original/das-technology-daswebapi-v1-swagger.json#GET /v1/review/{reviewGuid}",
+     "openapi/_original/das-technology-daswebapi-v1-swagger.json#GET /v1/stats/review",
+     "openapi/_original/das-technology-daswebapi-v1-swagger.json#POST /v1/review",
+     "openapi/_original/das-technology-daswebapi-v2-openapi.yml#GET /v2/stats/review",
+     "openapi/_original/das-technology-daswebapi-v2-swagger.json#GET /v2/stats/review"
+    ]
+   },
+   "etsy": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "shop_id": "integer",
+     "listing_id": "integer",
+     "rating": "integer",
+     "review": "string",
+     "language": "string",
+     "image_url_fullxfull": "string",
+     "create_timestamp": "integer",
+     "created_timestamp": "integer",
+     "update_timestamp": "integer",
+     "updated_timestamp": "integer",
+     "transaction_id": "integer",
+     "buyer_user_id": "integer"
+    },
+    "evidence": [
+     "openapi/_original/etsy-openapi-original.yml#GET /v3/application/listings/{listing_id}/reviews",
+     "openapi/_original/etsy-openapi-original.yml#GET /v3/application/shops/{shop_id}/reviews"
+    ]
+   },
+   "g2": {
+    "segments": [
+     "reviews",
+     "review"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object",
+     "relationships": "object",
+     "label": "string",
+     "placeholder": "string",
+     "is_required": "boolean",
+     "question_type": "string",
+     "format": "string",
+     "min": "number",
+     "max": "number",
+     "choices": "array",
+     "terms_accepted": "boolean",
+     "privacy_policy_accepted": "boolean",
+     "answers": "array",
+     "landing_page_id": "string",
+     "source_type": "string",
+     "utm_param_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/g2-api-v2-openapi.yaml#GET /api/v2/products/{product_id}/reviews",
+     "openapi/_original/g2-api-v2-openapi.yaml#GET /api/v2/users/me/products/{product_id}/review",
+     "openapi/_original/g2-api-v2-openapi.yaml#POST /api/v2/users/me/products/{product_id}/review",
+     "openapi/_original/g2-data-solutions-openapi.yaml#GET /api/v2/data_solutions/reviews"
+    ]
+   },
+   "google-business-profile": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "name": "string",
+     "reviewId": "string",
+     "reviewer": "object",
+     "starRating": "string",
+     "comment": "string",
+     "createTime": "string",
+     "updateTime": "string",
+     "reviewReply": "object"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#GET /accounts/{accountId}/locations/{locationId}/reviews"
+    ]
+   },
+   "judge-me": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "title": "string",
+     "body": "string",
+     "rating": "integer",
+     "product_external_id": "string",
+     "reviewer": "object",
+     "source": "string",
+     "curated": "string",
+     "published": "boolean",
+     "hidden": "boolean",
+     "verified": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "pictures": "array",
+     "name": "string",
+     "email": "string",
+     "platform": "string",
+     "url": "string",
+     "picture_urls": "array"
+    },
+    "evidence": [
+     "openapi/_original/judge-me-openapi.yml#GET /reviews",
+     "openapi/_original/judge-me-openapi.yml#POST /reviews"
+    ]
+   },
+   "lafourchette": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "data": "array",
+     "hasNext": "boolean",
+     "reviewUuid": "string",
+     "restaurantUuid": "string",
+     "isValid": "boolean",
+     "createdTs": "string",
+     "updatedTs": "string",
+     "reservation": "object",
+     "customer": "object",
+     "dinerRating": "object",
+     "comment": "object",
+     "experienceDetail": "object",
+     "restaurantReply": "object"
+    },
+    "evidence": [
+     "openapi/_original/lafourchette-b2b-api-openapi.yml#GET /v1/reviews",
+     "openapi/_original/lafourchette-b2b-api-openapi.yml#GET /v1/reviews/{id}"
+    ]
+   },
+   "listings-api": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "interactionId": "string",
+     "source": "string",
+     "title": "string",
+     "content": "string",
+     "authorName": "string",
+     "rating": "integer",
+     "date": "string",
+     "permalink": "string",
+     "category": "string",
+     "type": "string",
+     "responded": "boolean",
+     "notes": "string",
+     "responses": "array",
+     "responseCount": "integer",
+     "canRespond": "boolean",
+     "locationId": "integer",
+     "flaggedReason": "string"
+    },
+    "evidence": [
+     "openapi/_original/listings-api-openapi.yaml#GET /api/v4/locations/{locationId}/reviews"
+    ]
+   },
+   "litescrape": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/litescrape-agents-openapi.json#GET /api/apple/maps/reviews",
+     "openapi/_original/litescrape-agents-openapi.json#GET /api/google/reviews",
+     "openapi/_original/litescrape-agents-openapi.json#GET /api/tripadvisor/reviews",
+     "openapi/_original/litescrape-agents-openapi.json#GET /api/yelp/reviews",
+     "openapi/_original/litescrape-openapi.yml#GET /api/apple/maps/reviews",
+     "openapi/_original/litescrape-openapi.yml#GET /api/google/reviews",
+     "openapi/_original/litescrape-openapi.yml#GET /api/tripadvisor/reviews",
+     "openapi/_original/litescrape-openapi.yml#GET /api/yelp/reviews"
+    ]
+   },
+   "new-york-times-company": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "url": "string",
+     "publication_dt": "string",
+     "byline": "string",
+     "book_title": "string",
+     "book_author": "string",
+     "summary": "string",
+     "isbn13": "array",
+     "display_title": "string",
+     "mpaa_rating": "string",
+     "critics_pick": "integer",
+     "headline": "string",
+     "summary_short": "string",
+     "publication_date": "string",
+     "opening_date": "string",
+     "date_updated": "string",
+     "link": "object",
+     "multimedia": "object"
+    },
+    "evidence": [
+     "openapi/_original/books-api-openapi.yml#GET /reviews.json",
+     "openapi/_original/movie-reviews-v2-openapi.yml#GET /reviews/{type}.json"
+    ]
+   },
+   "podium": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "attributions": "array",
+     "author": "object",
+     "createdAt": "string",
+     "isRecommendation": "boolean",
+     "locations": "array",
+     "needsResponse": "boolean",
+     "responses": "array",
+     "review": "object",
+     "uid": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/podium-reviews-openapi-original.json#GET /v4/reviews",
+     "openapi/_original/podium-reviews-openapi-original.json#GET /v4/reviews/{uid}",
+     "openapi/_original/podium-reviews-openapi.yml#GET /v4/reviews",
+     "openapi/_original/podium-reviews-openapi.yml#GET /v4/reviews/{uid}"
+    ]
+   },
+   "reefapi": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "ok": "boolean",
+     "data": null,
+     "meta": "object",
+     "error": "object",
+     "hotel_id": "string",
+     "url": "string",
+     "page": "string",
+     "sort_by": "string",
+     "language": "string",
+     "product_id": "string",
+     "max_pages": "string",
+     "max_results": "string",
+     "page_size": "string",
+     "filter": "string",
+     "review_sort": "string",
+     "country": "string",
+     "currency": "string",
+     "asin": "string",
+     "marketplace": "string",
+     "marketplaces": "string",
+     "seller_id": "string",
+     "apps": "string",
+     "appleAppId": "string",
+     "googlePlayPackage": "string",
+     "appName": "string",
+     "stores": "string",
+     "countries": "string",
+     "maxReviews": "string",
+     "product_url": "string",
+     "offset": "string",
+     "limit": "string",
+     "sku": "string",
+     "sort": "string",
+     "page_name": "string",
+     "country_code": "string",
+     "hotel_url": "string",
+     "max_reviews": "string",
+     "keyword": "string",
+     "review_page_size": "string",
+     "query": "string",
+     "location_url": "string",
+     "country_only": "string",
+     "min_rating": "string",
+     "with_text_only": "string",
+     "slug": "string",
+     "type": "string",
+     "itm_id": "string",
+     "employer_id": "string",
+     "cursor": "string",
+     "dynamic_profile_id": "string",
+     "id": "string",
+     "book_id": "string",
+     "include_pii": "string",
+     "fid": "string",
+     "cid": "string",
+     "place_id": "string",
+     "lat": "string",
+     "lng": "string",
+     "lang": "string",
+     "region": "string",
+     "max_rotations": "string",
+     "imdb_id": "string",
+     "company": "string",
+     "start": "string",
+     "identifier": "string",
+     "site_id": "string",
+     "item_id": "string",
+     "rating": "string",
+     "variation_id": "string",
+     "item_url": "string",
+     "shop_code": "string",
+     "item_path": "string",
+     "manage_number": "string",
+     "domain": "string",
+     "appid": "string",
+     "num_per_page": "string",
+     "review_type": "string",
+     "day_range": "string",
+     "trend": "string",
+     "purchase_type": "string",
+     "redact_pii": "string",
+     "redactPii": "string",
+     "redact_author": "string",
+     "market": "string",
+     "sort_reviews": "string",
+     "filter_rating": "string",
+     "content_id": "string",
+     "startUrls": "string",
+     "queries": "string",
+     "includeCompany": "string",
+     "date_posted": "string",
+     "verified": "string",
+     "with_replies": "string",
+     "languages": "string",
+     "locale": "string",
+     "consumer_id": "string",
+     "product_slug": "string",
+     "source": "string",
+     "skip": "string",
+     "fetch_all": "string",
+     "include_non_public": "string",
+     "category_path": "string",
+     "course_id": "string",
+     "org_id": "string",
+     "encBizIds": "string",
+     "sortBy": "string",
+     "ratings": "string",
+     "includeDetail": "string",
+     "includeNotRecommended": "string",
+     "reviewsPerPage": "string"
+    },
+    "evidence": [
+     "openapi/_original/reefapi-openapi.json#POST /agoda/v1/reviews",
+     "openapi/_original/reefapi-openapi.json#POST /aliexpress/v1/reviews",
+     "openapi/_original/reefapi-openapi.json#POST /amazon/v1/product/reviews",
+     "openapi/_original/reefapi-openapi.json#POST /amazon/v1/seller/reviews",
+     "openapi/_original/reefapi-openapi.json#POST /app-store/v1/reviews",
+     "openapi/_original/reefapi-openapi.json#POST /asos/v1/reviews",
+     "openapi/_original/reefapi-openapi.json#POST /bestbuy/v1/reviews",
+     "openapi/_original/reefapi-openapi.json#POST /booking/v1/hotels/reviews",
+     "openapi/_original/reefapi-openapi.json#POST /car-rental/v1/cars/reviews",
+     "openapi/_original/reefapi-openapi.json#POST /coursera/v1/reviews",
+     "openapi/_original/reefapi-openapi.json#POST /flipkart/v1/reviews",
+     "openapi/_original/reefapi-openapi.json#POST /getyourguide/v1/reviews"
+    ]
+   },
+   "reflektive": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "task_uuid": "string"
+    },
+    "evidence": [
+     "openapi/_original/reflektive-reflektive-api-openapi.yml#POST /v1/reports/reviews"
+    ]
+   },
+   "reputation": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/reputation-api-openapi.yml#GET /v3/reviews"
+    ]
+   },
+   "reviews-io": {
+    "segments": [
+     "reviews",
+     "review"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "store": "string",
+     "word": "string",
+     "rating": "number",
+     "count": "integer",
+     "reviews": "object"
+    },
+    "evidence": [
+     "openapi/_original/reviews-io-openapi.yml#GET /merchant/reviews",
+     "openapi/_original/reviews-io-openapi.yml#GET /product/review",
+     "openapi/_original/reviews-io-openapi.yml#GET /reviews"
+    ]
+   },
+   "revinate": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/revinate-porter-openapi.yml#GET /hotels/{hotelId}/reviews",
+     "openapi/_original/revinate-porter-openapi.yml#GET /hotelsets/{hotelSetId}/reviews",
+     "openapi/_original/revinate-porter-openapi.yml#GET /reviews",
+     "openapi/_original/revinate-porter-openapi.yml#GET /reviews/{reviewId}"
+    ]
+   },
+   "rottentomatoes": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/openapi.json#GET /movies/{id}/reviews.json"
+    ]
+   },
+   "shopper-approved": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "reviewid": "string",
+     "name": "string",
+     "date": "string",
+     "rating": "integer",
+     "review": "string",
+     "headline": "string",
+     "verified": "boolean",
+     "location": "string",
+     "helpful": "integer",
+     "unhelpful": "integer"
+    },
+    "evidence": [
+     "openapi/_original/shopper-approved-openapi.yml#GET /reviews/{site_id}"
+    ]
+   },
+   "stayingapi": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "data": null,
+     "meta": "object",
+     "platform": "string",
+     "listingId": "string",
+     "reviewId": "string",
+     "rating": "number",
+     "ratingScale": "number",
+     "title": null,
+     "text": null,
+     "author": null,
+     "date": "string",
+     "tripType": null,
+     "language": null,
+     "ownerResponse": null,
+     "liked": null,
+     "disliked": null
+    },
+    "evidence": [
+     "openapi/_original/stayingapi-openapi-original.json#GET /reviews"
+    ]
+   },
+   "synup": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "source": "string",
+     "title": "string",
+     "content": "string",
+     "authorName": "string",
+     "authorAvatar": "string",
+     "authorUrl": "string",
+     "rating": "integer",
+     "date": "string",
+     "permalink": "string",
+     "category": "string",
+     "type": "string",
+     "photoUrl": "string",
+     "photoThumbnailUrl": "string",
+     "responded": "boolean",
+     "notes": "string",
+     "responses": "array",
+     "canRespond": "boolean",
+     "totalResponses": "integer"
+    },
+    "evidence": [
+     "openapi/_original/synup-api-openapi.yml#GET /locations/{locationId}/reviews"
+    ]
+   },
+   "tmdb": {
+    "segments": [
+     "reviews",
+     "review"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "author": "string",
+     "author_details": "object",
+     "content": "string",
+     "created_at": "string",
+     "id": "string",
+     "updated_at": "string",
+     "url": "string",
+     "iso_639_1": "string",
+     "media_id": "integer",
+     "media_title": "string",
+     "media_type": "string"
+    },
+    "evidence": [
+     "openapi/_original/the-movie-database-movie-api-openapi.yml#GET /3/movie/{movie_id}/reviews",
+     "openapi/_original/the-movie-database-review-api-openapi.yml#GET /3/review/{review_id}",
+     "openapi/_original/the-movie-database-tv-api-openapi.yml#GET /3/tv/{series_id}/reviews"
+    ]
+   },
+   "tripadvisor": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "lang": "string",
+     "location_id": "integer",
+     "published_date": "string",
+     "rating": "integer",
+     "helpful_votes": "integer",
+     "rating_image_url": "string",
+     "url": "string",
+     "text": "string",
+     "title": "string",
+     "trip_type": "string",
+     "travel_date": "string",
+     "user": "object",
+     "subratings": "object"
+    },
+    "evidence": [
+     "openapi/_original/tripadvisor-content-api-openapi.yml#GET /location/{locationId}/reviews"
+    ]
+   },
+   "trustpilot": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "stars": "integer",
+     "title": "string",
+     "text": "string",
+     "language": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "consumer": "object",
+     "businessUnit": "object",
+     "status": "string",
+     "verificationLevel": "string",
+     "orderId": "string"
+    },
+    "evidence": [
+     "openapi/_original/trustpilot-business-units-openapi.yml#GET /v1/business-units/{businessUnitId}/reviews",
+     "openapi/_original/trustpilot-business-units-openapi.yml#GET /v1/private/business-units/{businessUnitId}/reviews",
+     "openapi/_original/trustpilot-product-reviews-openapi.yml#GET /v1/private/product-reviews/business-units/{businessUnitId}/reviews",
+     "openapi/_original/trustpilot-product-reviews-openapi.yml#GET /v1/product-reviews/business-units/{businessUnitId}/reviews",
+     "openapi/_original/trustpilot-service-reviews-openapi.yml#GET /v1/private/reviews/{reviewId}",
+     "openapi/_original/trustpilot-service-reviews-openapi.yml#GET /v1/reviews/{reviewId}"
+    ]
+   },
+   "yext": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "locationId": "string",
+     "accountId": "string",
+     "publisherId": "string",
+     "rating": "number",
+     "title": "string",
+     "content": "string",
+     "authorName": "string",
+     "authorEmail": "string",
+     "url": "string",
+     "publisherDate": "integer",
+     "lastYextUpdateTime": "integer",
+     "status": "string",
+     "flagStatus": "string",
+     "reviewLanguage": "string",
+     "comments": "array",
+     "labelIds": "array",
+     "reviewLabels": "array",
+     "reviewType": "string",
+     "recommendation": "string",
+     "transactionId": "string",
+     "invitationId": "string",
+     "apiIdentifier": "string",
+     "meta": "object",
+     "response": "object",
+     "entityId": "string",
+     "date": "string",
+     "externalId": "string",
+     "invitationUid": "string",
+     "reviewId": "string",
+     "timestamp": "string",
+     "maxRating": "string",
+     "flagReason": "string",
+     "generated": "boolean",
+     "commentId": "string",
+     "comment": "string"
+    },
+    "evidence": [
+     "openapi/_original/yext-knowledge-api-openapi.yml#GET /accounts/{accountId}/reviews",
+     "openapi/_original/yext-knowledge-api-openapi.yml#GET /accounts/{accountId}/reviews/{reviewId}",
+     "openapi/_original/yext-knowledge-api-openapi.yml#POST /accounts/{accountId}/reviews",
+     "openapi/_original/yext-knowledge-api-openapi.yml#PUT /accounts/{accountId}/reviews/{reviewId}",
+     "openapi/_original/yext-publisher-listings-api-openapi.yml#GET /listings/reviews",
+     "openapi/_original/yext-publisher-listings-api-openapi.yml#GET /listings/reviews/{reviewId}",
+     "openapi/_original/yext-publisher-listings-api-openapi.yml#POST /listings/reviews/{reviewId}"
+    ]
+   },
+   "yotpo": {
+    "segments": [
+     "reviews"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "status": "object",
+     "response": "object",
+     "id": "integer",
+     "score": "integer",
+     "votes_up": "integer",
+     "votes_down": "integer",
+     "content": "string",
+     "title": "string",
+     "created_at": "string",
+     "verified_buyer": "boolean",
+     "appkey": "string",
+     "product_id": "string",
+     "domain": "string",
+     "email": "string",
+     "display_name": "string",
+     "review_content": "string",
+     "review_title": "string",
+     "review_score": "integer"
+    },
+    "evidence": [
+     "openapi/_original/yotpo-openapi.yml#GET /v1/apps/{app_key}/reviews",
+     "openapi/_original/yotpo-openapi.yml#POST /v1/widget/reviews"
+    ]
+   }
+  },
+  "review_reply": {
+   "bazaarvoice": {
+    "segments": [
+     "responses"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "counts": "array",
+     "reviewIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/bazaarvoice-response-count-openapi.json#POST /response/v1/clientResponses/reviews/-/responses",
+     "openapi/_original/bazaarvoice-response-count-openapi.yml#POST /response/v1/clientResponses/reviews/-/responses"
+    ]
+   },
+   "google-business-profile": {
+    "segments": [
+     "reply"
+    ],
+    "operations": [
+     "PUT collection"
+    ],
+    "properties": {
+     "comment": "string"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#PUT /accounts/{accountId}/locations/{locationId}/reviews/{reviewId}/reply"
+    ]
+   },
+   "lafourchette": {
+    "segments": [
+     "reply"
+    ],
+    "operations": [
+     "PUT collection"
+    ],
+    "properties": {
+     "reviewUuid": "string",
+     "restaurantReply": "object",
+     "content": "string",
+     "language": "string"
+    },
+    "evidence": [
+     "openapi/_original/lafourchette-b2b-api-openapi.yml#PUT /v1/reviews/{id}/reply"
+    ]
+   },
+   "podium": {
+    "segments": [
+     "responses"
+    ],
+    "operations": [
+     "GET collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "body": "string",
+     "isDeleted": "boolean",
+     "likeCount": "integer",
+     "publishDate": "string",
+     "siteAuthorName": "string",
+     "source": "string",
+     "uid": "string"
+    },
+    "evidence": [
+     "openapi/_original/podium-reviews-openapi-original.json#GET /v4/reviews/{uid}/responses",
+     "openapi/_original/podium-reviews-openapi-original.json#PATCH /v4/reviews/{review_uid}/responses/{uid}",
+     "openapi/_original/podium-reviews-openapi-original.json#POST /v4/reviews/{uid}/responses",
+     "openapi/_original/podium-reviews-openapi.yml#GET /v4/reviews/{uid}/responses",
+     "openapi/_original/podium-reviews-openapi.yml#PATCH /v4/reviews/{review_uid}/responses/{uid}",
+     "openapi/_original/podium-reviews-openapi.yml#POST /v4/reviews/{uid}/responses"
+    ]
+   },
+   "reputation": {
+    "segments": [
+     "responses"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/reputation-api-openapi.yml#GET /v3/reviews/{reviewID}/responses"
+    ]
+   },
+   "trustpilot": {
+    "segments": [
+     "reply"
+    ],
+    "operations": [
+     "DELETE collection",
+     "POST collection"
+    ],
+    "properties": {
+     "message": "string",
+     "authorBusinessUserId": "string"
+    },
+    "evidence": [
+     "openapi/_original/trustpilot-service-reviews-openapi.yml#DELETE /v1/private/reviews/{reviewId}/reply",
+     "openapi/_original/trustpilot-service-reviews-openapi.yml#POST /v1/private/reviews/{reviewId}/reply"
+    ]
+   },
+   "yext": {
+    "segments": [
+     "comments"
+    ],
+    "operations": [
+     "DELETE item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "meta": "object",
+     "response": "object",
+     "id": "integer",
+     "parentId": "integer",
+     "publisherDate": "integer",
+     "authorName": "string",
+     "authorEmail": "string",
+     "authorRole": "string",
+     "content": "string",
+     "visibility": "string",
+     "date": "string",
+     "suppressReviewerContact": "boolean",
+     "attestation": "object"
+    },
+    "evidence": [
+     "openapi/_original/yext-knowledge-api-openapi.yml#DELETE /accounts/{accountId}/reviews/{reviewId}/comments/{commentId}",
+     "openapi/_original/yext-knowledge-api-openapi.yml#POST /accounts/{accountId}/reviews/{reviewId}/comments",
+     "openapi/_original/yext-knowledge-api-openapi.yml#PUT /accounts/{accountId}/reviews/{reviewId}/comments/{commentId}"
+    ]
+   }
+  },
+  "reviewed_location": {
+   "birdeye": {
+    "segments": [
+     "business",
+     "location"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "name": "string",
+     "alias": "string",
+     "isAddressHidden": "number",
+     "location": "object",
+     "emailId": "string",
+     "phone": "string",
+     "fax": "string",
+     "websiteUrl": "string",
+     "establishedYear": "number",
+     "timezone": "string",
+     "languages": "array",
+     "isServiceAreaProvider": "string",
+     "serviceAreas": "array",
+     "working24x7": "number",
+     "hoursOfOperations": "array",
+     "specialHours": "array",
+     "businessStatus": "string",
+     "reopenDate": "string",
+     "services": "string",
+     "keywords": "string",
+     "products": "string",
+     "appointmentLink": "string",
+     "reservationLink": "string",
+     "menuLink": "string",
+     "orderAheadLink": "string",
+     "impressum": "string",
+     "payment": "string",
+     "localPhoneNumber": "string",
+     "tollFreePhoneNumber": "string",
+     "androidAppURL": "string",
+     "iosAppURL": "string",
+     "logoUrl": "string",
+     "gmbLogoOptOut": "number",
+     "fbLogoOptOut": "number",
+     "gmbCoverOptOut": "number",
+     "fbCoverOptOut": "number",
+     "coverImageUrl": "string",
+     "gmbCover": "string",
+     "facebookCover": "string",
+     "coverBusinessInfoLayout": "string",
+     "covidInfo": "object",
+     "bingListing": "object",
+     "internalListing": "object",
+     "facebookListing": "object",
+     "gmbListing": "object",
+     "socialProfileURLs": "object",
+     "isSEOEnabled": "boolean",
+     "externalReferenceId": "string",
+     "customFields": "object",
+     "entityCategory": "string",
+     "sourceAlias": "string",
+     "url": "string",
+     "sourceAliases": "array",
+     "businessNumbers": "array",
+     "months": "number",
+     "startDate": "string",
+     "endDate": "string",
+     "reviewSites": "array",
+     "aiModel": "string",
+     "theme": "string",
+     "pageNo": "string",
+     "pageSize": "string",
+     "viewReportType": "string",
+     "businessId": "number",
+     "description": "string",
+     "reviewCount": "number",
+     "avgRating": "number",
+     "status": "string",
+     "type": "string",
+     "category": "string",
+     "categoryList": "array",
+     "id": "number",
+     "sourceUrl": "string",
+     "sourceName": "string",
+     "Body": "string",
+     "rating": "number",
+     "count": "number",
+     "milestone": "string",
+     "state": "string",
+     "avgScore": "number",
+     "grade": "string",
+     "totalCount": "number",
+     "metricForLocn": "object",
+     "businessName": "string",
+     "activationStatus": "string",
+     "lastUpdated": "string",
+     "locationStatus": "string",
+     "totalSites": "number",
+     "syncedCount": "number",
+     "submittedCount": "number",
+     "needUpdatesCount": "number",
+     "optedOutCount": "number",
+     "notConnectedCount": "number",
+     "syncedPercentage": "string",
+     "submittedPercentage": "string",
+     "needUpdatesPercentage": "string",
+     "optedOutPercentage": "string",
+     "notConnectedPercentage": "string",
+     "publishListings": "string",
+     "errors": "array",
+     "sites": "array",
+     "postalCode": "string",
+     "address": "string",
+     "city": "string",
+     "startDate - Start date for the report range (format": null,
+     "endDate - End date for the report range (format": null,
+     "viewReportType - Defines the level at which the report is generated. Allowed values": null
+    },
+    "evidence": [
+     "openapi/_original/birdeye-birdeye-api-openapi.yml#DELETE /v1/business/{business_Id}",
+     "openapi/_original/birdeye-birdeye-api-openapi.yml#GET /v1/aggregation/business/{businessId}",
+     "openapi/_original/birdeye-birdeye-api-openapi.yml#GET /v1/business/{business_id}",
+     "openapi/_original/birdeye-birdeye-api-openapi.yml#GET /v1/listing/status/location",
+     "openapi/_original/birdeye-birdeye-api-openapi.yml#POST /v1/aggregation/business/{business_id}",
+     "openapi/_original/birdeye-birdeye-api-openapi.yml#POST /v1/keywords/opmetric/location",
+     "openapi/_original/birdeye-birdeye-api-openapi.yml#POST /v1/listing/searchAi/public/business",
+     "openapi/_original/birdeye-birdeye-api-openapi.yml#POST /v1/reports/rating/location",
+     "openapi/_original/birdeye-birdeye-api-openapi.yml#PUT /v1/business/{businessId}",
+     "openapi/_original/birdeye-openapi-original.yml#DELETE /v1/business/{business_Id}",
+     "openapi/_original/birdeye-openapi-original.yml#GET /v1/aggregation/business/{businessId}",
+     "openapi/_original/birdeye-openapi-original.yml#GET /v1/business/{business_id}"
+    ]
+   },
+   "google-business-profile": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "locationName": "string",
+     "primaryPhone": "string",
+     "address": "object",
+     "primaryCategory": "object",
+     "websiteUrl": "string",
+     "regularHours": "object",
+     "locationState": "object",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#DELETE /accounts/{accountId}/locations/{locationId}",
+     "openapi/_original/openapi.yml#GET /accounts/{accountId}/locations",
+     "openapi/_original/openapi.yml#GET /accounts/{accountId}/locations/{locationId}",
+     "openapi/_original/openapi.yml#PATCH /accounts/{accountId}/locations/{locationId}",
+     "openapi/_original/openapi.yml#POST /accounts/{accountId}/locations"
+    ]
+   },
+   "listings-api": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "edges": "array",
+     "nodes": "array",
+     "pageInfo": "object",
+     "totalCount": "integer",
+     "code": "string",
+     "message": "string",
+     "path": "array",
+     "clientMutationId": "string",
+     "name": "string",
+     "description": "string",
+     "storeId": "string",
+     "street": "string",
+     "city": "string",
+     "stateIso": "string",
+     "postalCode": "string",
+     "countryIso": "string",
+     "subCategoryId": "integer",
+     "phone": "string",
+     "businessHours": "array",
+     "serviceArea": "object",
+     "enabledSiteIds": "array",
+     "placeActionLinks": "array"
+    },
+    "evidence": [
+     "openapi/_original/listings-api-openapi.yaml#GET /api/v4/locations",
+     "openapi/_original/listings-api-openapi.yaml#POST /api/v4/locations"
+    ]
+   },
+   "podium": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "address": "string",
+     "addressDetails": "object",
+     "archived": "boolean",
+     "archivedAt": "string",
+     "createdAt": "string",
+     "displayName": "string",
+     "name": "string",
+     "organizationUid": "string",
+     "phoneNumber": "string",
+     "podiumPhoneNumber": "string",
+     "uid": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/podium-accounts-openapi-original.json#GET /v4/locations",
+     "openapi/_original/podium-accounts-openapi-original.json#GET /v4/locations/{uid}",
+     "openapi/_original/podium-accounts-openapi-original.json#PATCH /v4/locations/{uid}",
+     "openapi/_original/podium-accounts-openapi.yml#GET /v4/locations",
+     "openapi/_original/podium-accounts-openapi.yml#GET /v4/locations/{uid}",
+     "openapi/_original/podium-accounts-openapi.yml#PATCH /v4/locations/{uid}"
+    ]
+   },
+   "reefapi": {
+    "segments": [
+     "locations",
+     "location"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "ok": "boolean",
+     "data": null,
+     "meta": "object",
+     "error": "object",
+     "query": "string",
+     "country": "string",
+     "region_id": "string",
+     "city_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/reefapi-openapi.json#POST /hemnet/v1/location",
+     "openapi/_original/reefapi-openapi.json#POST /olx/v1/locations",
+     "openapi/_original/reefapi-openapi.json#POST /tiktok-creative-center/v1/locations"
+    ]
+   },
+   "reputation": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/reputation-api-openapi.yml#DELETE /v3/locations/{locationID}",
+     "openapi/_original/reputation-api-openapi.yml#GET /v3/locations",
+     "openapi/_original/reputation-api-openapi.yml#GET /v3/locations/{locationID}",
+     "openapi/_original/reputation-api-openapi.yml#POST /v3/locations"
+    ]
+   },
+   "synup": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "accountId": "integer",
+     "additionalCategoryIds": "array",
+     "additionalInfo": "null",
+     "additionalPhones": "array",
+     "archived": "boolean",
+     "archivedAt": "null",
+     "billingPeriod": "null",
+     "bizUrl": "string",
+     "bookingUrl": "string",
+     "categoryId": "integer",
+     "city": "string",
+     "countryIso": "string",
+     "customAttributes": "array",
+     "databaseId": "integer",
+     "description": "string",
+     "facebookUrl": "string",
+     "folderId": "string",
+     "folderName": "string",
+     "googleAdsPhone": "string",
+     "googleplusUrl": "null",
+     "hideAddress": "boolean",
+     "id": "string",
+     "instagramUrl": "string",
+     "isRestaurant": "boolean",
+     "latitude": "number",
+     "linkedinUrl": "string",
+     "locationPhotos": "array",
+     "longitude": "number",
+     "moreHours": "array",
+     "name": "string",
+     "offeringsUrl": "string",
+     "ownerEmail": "string",
+     "ownerName": "string",
+     "package": "string",
+     "paymentMethods": "array",
+     "phone": "string",
+     "pinterestUrl": "string",
+     "planId": "integer",
+     "planName": "string",
+     "postalCode": "string",
+     "publisherAttributes": "array",
+     "reservationUrl": "string",
+     "serviceItems": "array",
+     "stateIso": "string",
+     "storeId": "null",
+     "street": "string",
+     "street1": "string",
+     "subCategory": "object",
+     "subCategoryId": "integer",
+     "subCategoryName": "string",
+     "tagline": "string",
+     "tags": "array",
+     "temporarilyClosed": "boolean",
+     "tiktokUrl": "null",
+     "toplineMessage": "null",
+     "toplineMessageText": "null",
+     "twitterUrl": "string",
+     "videos": "array",
+     "yearOfIncorporation": "integer",
+     "youtubeUrl": "null",
+     "placeActionLinks": "array",
+     "discoveredPlaceActionLinks": "array",
+     "errors": "null",
+     "location": "object",
+     "success": "boolean",
+     "warnings": "array",
+     "businessHours": "array",
+     "tenure": "string",
+     "enabledSiteIds": "array",
+     "submissionDisabledSiteIds": "array",
+     "searchLocationsByTag": "object"
+    },
+    "evidence": [
+     "openapi/_original/synup-api-openapi.yml#GET /locations",
+     "openapi/_original/synup-api-openapi.yml#GET /tags/locations",
+     "openapi/_original/synup-api-openapi.yml#POST /locations"
+    ]
+   },
+   "yext": {
+    "segments": [
+     "locations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "uid": "string",
+     "accountId": "string",
+     "timestamp": "integer",
+     "timezone": "string",
+     "locationType": "string",
+     "locationName": "string",
+     "firstName": "string",
+     "middleName": "string",
+     "lastName": "string",
+     "officeName": "string",
+     "gender": "string",
+     "npi": "string",
+     "address": "string",
+     "address2": "string",
+     "suppressAddress": "boolean",
+     "displayAddress": "string",
+     "city": "string",
+     "state": "string",
+     "sublocality": "string",
+     "zip": "string",
+     "countryCode": "string",
+     "serviceArea": "object",
+     "phone": "string",
+     "isPhoneTracked": "boolean",
+     "localPhone": "string",
+     "alternatePhone": "string",
+     "faxPhone": "string",
+     "mobilePhone": "string",
+     "tollFreePhone": "string",
+     "ttyPhone": "string",
+     "categoryIds": "array",
+     "featuredMessage": "string",
+     "featuredMessageUrl": "string",
+     "websiteUrl": "string",
+     "displayWebsiteUrl": "string",
+     "reservationUrl": "string",
+     "displayReservationUrl": "string",
+     "menuUrl": "string",
+     "displayMenuUrl": "string",
+     "orderUrl": "string",
+     "displayOrderUrl": "string",
+     "hours": "string",
+     "additionalHoursText": "string",
+     "holidayHours": "array",
+     "description": "string",
+     "conditionsTreated": "array",
+     "certifications": "array",
+     "educationList": "array",
+     "degrees": "array",
+     "admittingHospitals": "array",
+     "acceptingNewPatients": "boolean",
+     "closed": "object",
+     "paymentOptions": "array",
+     "insuranceAccepted": "array",
+     "logo": "object",
+     "photos": "array",
+     "headshot": "object",
+     "videoUrls": "array",
+     "instagramHandle": "string",
+     "twitterHandle": "string",
+     "googleWebsiteOverride": "string",
+     "googleCoverPhoto": "object",
+     "googleProfilePhoto": "object",
+     "googleAttributes": "array",
+     "facebookPageUrl": "string",
+     "facebookCallToAction": "object",
+     "facebookCoverPhoto": "object",
+     "facebookProfilePicture": "object",
+     "uberLinkType": "string",
+     "uberLinkText": "string",
+     "uberTripBrandingText": "string",
+     "uberTripBrandingUrl": "string",
+     "uberTripBrandingDescription": "string",
+     "uberEmbedCode": "string",
+     "uberLink": "string",
+     "uberLinkRaw": "string",
+     "yearEstablished": "string",
+     "displayLat": "number",
+     "displayLng": "number",
+     "routableLat": "number",
+     "routableLng": "number",
+     "walkableLat": "number",
+     "walkableLng": "number",
+     "pickupLat": "number",
+     "pickupLng": "number",
+     "dropoffLat": "number",
+     "dropoffLng": "number",
+     "yextDisplayLat": "number",
+     "yextDisplayLng": "number",
+     "yextRoutableLat": "number",
+     "yextRoutableLng": "number",
+     "yextWalkableLat": "number",
+     "yextWalkableLng": "number",
+     "yextPickupLat": "number",
+     "yextPickupLng": "number",
+     "yextDropoffLat": "number",
+     "yextDropoffLng": "number",
+     "emails": "array",
+     "specialities": "array",
+     "associations": "array",
+     "products": "array",
+     "services": "array",
+     "brands": "array",
+     "language": "string",
+     "languages": "array",
+     "keywords": "array",
+     "menusLabel": "string",
+     "menuIds": "array",
+     "bioListsLabel": "string",
+     "bioListIds": "array",
+     "productListsLabel": "string",
+     "productListIds": "array",
+     "eventListsLabel": "string",
+     "eventListIds": "array",
+     "folderId": "string",
+     "labelIds": "array",
+     "customFields": "object",
+     "intelligentSearchTrackingEnabled": "boolean",
+     "intelligentSearchTrackingFrequency": "string",
+     "locationKeywords": "array",
+     "customKeywords": "array",
+     "queryTemplates": "array",
+     "alternateNames": "array",
+     "alternateWebsites": "array",
+     "competitors": "array",
+     "trackingSites": "array",
+     "isoRegionCode": "string",
+     "reviewBalancingURL": "string",
+     "firstPartyReviewPage": "string",
+     "isClusterPrimary": "boolean",
+     "schemaTypes": "array",
+     "attire": "string",
+     "priceRange": "string",
+     "mealsServed": "array",
+     "locatedIn": "string",
+     "primaryContact": "string",
+     "reviewResponseConversationEnabled": "boolean",
+     "holidayHoursConfirmationEnabled": "boolean",
+     "meta": "object",
+     "response": "object"
+    },
+    "evidence": [
+     "openapi/_original/yext-knowledge-api-openapi.yml#GET /accounts/{accountId}/locations",
+     "openapi/_original/yext-knowledge-api-openapi.yml#GET /accounts/{accountId}/locations/{locationId}",
+     "openapi/_original/yext-knowledge-api-openapi.yml#POST /accounts/{accountId}/locations",
+     "openapi/_original/yext-knowledge-api-openapi.yml#PUT /accounts/{accountId}/locations/{locationId}",
+     "openapi/_original/yext-live-api-openapi.yml#GET /accounts/{accountId}/locations",
+     "openapi/_original/yext-live-api-openapi.yml#GET /accounts/{accountId}/locations/{locationId}"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "asknicely",
+    "bazaarvoice",
+    "bezero-carbon",
+    "birdeye",
+    "cargurus-dealer",
+    "das-technology",
+    "edmunds",
+    "etsy",
+    "foursquare",
+    "g2",
+    "goodays",
+    "google-business-profile",
+    "judge-me",
+    "karrio",
+    "lafourchette",
+    "listings-api",
+    "litescrape",
+    "luma-health",
+    "new-york-times-company",
+    "podium",
+    "reefapi",
+    "reflektive",
+    "reputation",
+    "reviews-io",
+    "revinate",
+    "rottentomatoes",
+    "serper",
+    "shopper-approved",
+    "signal-ai",
+    "stamped",
+    "stayingapi",
+    "synup",
+    "tmdb",
+    "tripadvisor",
+    "trustpilot",
+    "trustradius",
+    "weave",
+    "yext",
+    "yotpo"
+   ],
+   "kebab-case": [
+    "bazaarvoice",
+    "bezero-carbon",
+    "birdeye",
+    "edmunds",
+    "etsy",
+    "listings-api",
+    "litescrape",
+    "luma-health",
+    "new-york-times-company",
+    "reefapi",
+    "reflektive",
+    "reputation",
+    "reviews-io",
+    "signal-ai",
+    "stamped",
+    "stayingapi",
+    "synup",
+    "trustpilot",
+    "trustradius",
+    "weave",
+    "yext"
+   ],
+   "snake_case": [
+    "bazaarvoice",
+    "g2",
+    "goodays",
+    "judge-me",
+    "listings-api",
+    "podium",
+    "reefapi",
+    "rottentomatoes",
+    "synup",
+    "tmdb",
+    "tripadvisor",
+    "weave",
+    "yotpo"
+   ],
+   "camelCase": [
+    "bazaarvoice",
+    "birdeye",
+    "das-technology",
+    "google-business-profile",
+    "lafourchette",
+    "listings-api",
+    "luma-health",
+    "reefapi",
+    "reputation",
+    "synup",
+    "yext"
+   ],
+   "other": [
+    "asknicely",
+    "bazaarvoice",
+    "birdeye",
+    "cargurus-dealer",
+    "judge-me",
+    "omdb",
+    "reefapi",
+    "tmdb"
+   ],
+   "PascalCase": [
+    "das-technology",
+    "imdb-api"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "asknicely",
+    "bazaarvoice",
+    "bezero-carbon",
+    "birdeye",
+    "cargurus-dealer",
+    "das-technology",
+    "edmunds",
+    "etsy",
+    "foursquare",
+    "g2",
+    "goodays",
+    "imdb-api",
+    "judge-me",
+    "karrio",
+    "lafourchette",
+    "listings-api",
+    "litescrape",
+    "luma-health",
+    "new-york-times-company",
+    "omdb",
+    "podium",
+    "reflektive",
+    "reputation",
+    "reviews-io",
+    "revinate",
+    "rottentomatoes",
+    "shopper-approved",
+    "signal-ai",
+    "stamped",
+    "stayingapi",
+    "synup",
+    "tmdb",
+    "tripadvisor",
+    "trustpilot",
+    "trustradius",
+    "weave",
+    "yext",
+    "yotpo"
+   ],
+   "camelCase": [
+    "bazaarvoice",
+    "bezero-carbon",
+    "birdeye",
+    "cargurus-dealer",
+    "das-technology",
+    "edmunds",
+    "imdb-api",
+    "lafourchette",
+    "listings-api",
+    "litescrape",
+    "luma-health",
+    "new-york-times-company",
+    "podium",
+    "reviews-io",
+    "revinate",
+    "stamped",
+    "stayingapi",
+    "synup",
+    "tripadvisor",
+    "trustpilot",
+    "yext"
+   ],
+   "snake_case": [
+    "asknicely",
+    "birdeye",
+    "etsy",
+    "foursquare",
+    "g2",
+    "goodays",
+    "imdb-api",
+    "judge-me",
+    "karrio",
+    "litescrape",
+    "new-york-times-company",
+    "podium",
+    "reflektive",
+    "reviews-io",
+    "rottentomatoes",
+    "tmdb",
+    "tripadvisor",
+    "weave",
+    "yext",
+    "yotpo"
+   ],
+   "other": [
+    "asknicely",
+    "bazaarvoice",
+    "das-technology",
+    "g2",
+    "luma-health",
+    "tmdb",
+    "yext"
+   ],
+   "kebab-case": [
+    "asknicely",
+    "new-york-times-company",
+    "signal-ai",
+    "trustradius"
+   ],
+   "PascalCase": [
+    "bazaarvoice",
+    "das-technology"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "asknicely",
+    "bazaarvoice",
+    "birdeye",
+    "das-technology",
+    "edmunds",
+    "etsy",
+    "g2",
+    "goodays",
+    "imdb-api",
+    "karrio",
+    "lafourchette",
+    "luma-health",
+    "new-york-times-company",
+    "podium",
+    "reflektive",
+    "rottentomatoes",
+    "signal-ai",
+    "stayingapi",
+    "synup",
+    "yext"
+   ],
+   "camelCase": [
+    "asknicely",
+    "bazaarvoice",
+    "bezero-carbon",
+    "birdeye",
+    "das-technology",
+    "google-business-profile",
+    "imdb-api",
+    "lafourchette",
+    "listings-api",
+    "luma-health",
+    "reputation",
+    "revinate",
+    "stamped",
+    "stayingapi",
+    "synup",
+    "tripadvisor",
+    "trustpilot",
+    "yext"
+   ],
+   "snake_case": [
+    "birdeye",
+    "etsy",
+    "foursquare",
+    "g2",
+    "goodays",
+    "karrio",
+    "new-york-times-company",
+    "podium",
+    "shopper-approved",
+    "synup",
+    "tmdb",
+    "trustradius",
+    "yext",
+    "yotpo"
+   ],
+   "kebab-case": [
+    "bazaarvoice",
+    "new-york-times-company"
+   ],
+   "other": [
+    "birdeye",
+    "synup"
+   ],
+   "PascalCase": [
+    "birdeye"
+   ]
+  },
+  "property": {
+   "lower": [
+    "bazaarvoice",
+    "birdeye",
+    "das-technology",
+    "etsy",
+    "g2",
+    "google-business-profile",
+    "judge-me",
+    "lafourchette",
+    "listings-api",
+    "new-york-times-company",
+    "podium",
+    "reefapi",
+    "reviews-io",
+    "shopper-approved",
+    "stayingapi",
+    "synup",
+    "tmdb",
+    "tripadvisor",
+    "trustpilot",
+    "yext",
+    "yotpo"
+   ],
+   "camelCase": [
+    "bazaarvoice",
+    "birdeye",
+    "das-technology",
+    "google-business-profile",
+    "lafourchette",
+    "listings-api",
+    "podium",
+    "reefapi",
+    "stayingapi",
+    "synup",
+    "trustpilot",
+    "yext"
+   ],
+   "snake_case": [
+    "etsy",
+    "g2",
+    "judge-me",
+    "new-york-times-company",
+    "reefapi",
+    "reflektive",
+    "tmdb",
+    "tripadvisor",
+    "yotpo"
+   ],
+   "PascalCase": [
+    "bazaarvoice",
+    "birdeye"
+   ],
+   "other": [
+    "birdeye"
+   ]
+  },
+  "pagination_param": {
+   "page": [
+    "bezero-carbon",
+    "birdeye",
+    "das-technology",
+    "judge-me",
+    "lafourchette",
+    "listings-api",
+    "luma-health",
+    "new-york-times-company",
+    "omdb",
+    "reflektive",
+    "reviews-io",
+    "revinate",
+    "rottentomatoes",
+    "shopper-approved",
+    "stamped",
+    "synup",
+    "tmdb",
+    "trustpilot",
+    "yotpo"
+   ],
+   "limit": [
+    "bazaarvoice",
+    "das-technology",
+    "etsy",
+    "foursquare",
+    "lafourchette",
+    "litescrape",
+    "luma-health",
+    "new-york-times-company",
+    "podium",
+    "reputation",
+    "rottentomatoes",
+    "shopper-approved",
+    "stamped",
+    "stayingapi",
+    "synup",
+    "trustradius",
+    "weave",
+    "yext"
+   ],
+   "offset": [
+    "bazaarvoice",
+    "etsy",
+    "new-york-times-company",
+    "reputation",
+    "synup",
+    "yext"
+   ],
+   "page_size": [
+    "birdeye",
+    "das-technology",
+    "g2",
+    "goodays",
+    "yext"
+   ],
+   "per_page": [
+    "judge-me",
+    "listings-api",
+    "reviews-io",
+    "synup",
+    "trustpilot"
+   ],
+   "before": [
+    "bazaarvoice",
+    "listings-api",
+    "synup",
+    "yext"
+   ],
+   "count": [
+    "birdeye",
+    "litescrape",
+    "trustpilot",
+    "yotpo"
+   ],
+   "size": [
+    "birdeye",
+    "imdb-api",
+    "revinate",
+    "signal-ai"
+   ],
+   "after": [
+    "bazaarvoice",
+    "listings-api",
+    "synup"
+   ],
+   "cursor": [
+    "goodays",
+    "podium",
+    "stayingapi"
+   ],
+   "start": [
+    "litescrape",
+    "weave"
+   ],
+   "page_token": [
+    "trustpilot",
+    "yext"
+   ],
+   "skip": [
+    "trustradius"
+   ]
+  }
+ }
+}

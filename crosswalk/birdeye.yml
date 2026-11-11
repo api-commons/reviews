@@ -1,0 +1,41 @@
+provider: birdeye
+apis_io: https://apis.io/providers/birdeye/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - review
+    properties:
+      rating: rating
+      created_at: reviewDate
+      author_name: reviewerName
+      source: source
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/birdeye-birdeye-api-openapi.yml#POST /v1/competitors/review
+    - openapi/_original/birdeye-birdeye-api-openapi.yml#POST /v1/tag/add/review
+    - openapi/_original/birdeye-birdeye-api-openapi.yml#POST /v1/tag/remove/all/review
+    - openapi/_original/birdeye-birdeye-api-openapi.yml#POST /v1/tag/remove/review
+    - openapi/_original/birdeye-openapi-original.yml#POST /v1/competitors/review
+  reviewed_location:
+    path_segment:
+    - business
+    - location
+    properties:
+      name: name
+      address: address
+      city: city
+      description: description
+      metadata: customFields
+      phone: phone
+      id: id
+      postal_code: postalCode
+      website_url: websiteUrl
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/birdeye-birdeye-api-openapi.yml#DELETE /v1/business/{business_Id}
+    - openapi/_original/birdeye-birdeye-api-openapi.yml#GET /v1/aggregation/business/{businessId}
+    - openapi/_original/birdeye-birdeye-api-openapi.yml#GET /v1/business/{business_id}
+    - openapi/_original/birdeye-birdeye-api-openapi.yml#GET /v1/listing/status/location
+    - openapi/_original/birdeye-birdeye-api-openapi.yml#POST /v1/aggregation/business/{business_id}

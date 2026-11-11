@@ -1,0 +1,15 @@
+provider: revinate
+apis_io: https://apis.io/providers/revinate/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/revinate-porter-openapi.yml#GET /hotels/{hotelId}/reviews
+    - openapi/_original/revinate-porter-openapi.yml#GET /hotelsets/{hotelSetId}/reviews
+    - openapi/_original/revinate-porter-openapi.yml#GET /reviews
+    - openapi/_original/revinate-porter-openapi.yml#GET /reviews/{reviewId}

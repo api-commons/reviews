@@ -1,0 +1,32 @@
+provider: trustpilot
+apis_io: https://apis.io/providers/trustpilot/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    properties:
+      rating: stars
+      created_at: createdAt
+      id: id
+      body: text
+      title: title
+      updated_at: updatedAt
+      language: language
+      status: status
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/trustpilot-business-units-openapi.yml#GET /v1/business-units/{businessUnitId}/reviews
+    - openapi/_original/trustpilot-business-units-openapi.yml#GET /v1/private/business-units/{businessUnitId}/reviews
+    - openapi/_original/trustpilot-product-reviews-openapi.yml#GET /v1/private/product-reviews/business-units/{businessUnitId}/reviews
+    - openapi/_original/trustpilot-product-reviews-openapi.yml#GET /v1/product-reviews/business-units/{businessUnitId}/reviews
+    - openapi/_original/trustpilot-service-reviews-openapi.yml#GET /v1/private/reviews/{reviewId}
+  review_reply:
+    path_segment:
+    - reply
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/trustpilot-service-reviews-openapi.yml#DELETE /v1/private/reviews/{reviewId}/reply
+    - openapi/_original/trustpilot-service-reviews-openapi.yml#POST /v1/private/reviews/{reviewId}/reply

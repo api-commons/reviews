@@ -1,0 +1,29 @@
+provider: reputation
+apis_io: https://apis.io/providers/reputation/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/reputation-api-openapi.yml#GET /v3/reviews
+  review_reply:
+    path_segment:
+    - responses
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/reputation-api-openapi.yml#GET /v3/reviews/{reviewID}/responses
+  reviewed_location:
+    path_segment:
+    - locations
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/reputation-api-openapi.yml#DELETE /v3/locations/{locationID}
+    - openapi/_original/reputation-api-openapi.yml#GET /v3/locations
+    - openapi/_original/reputation-api-openapi.yml#GET /v3/locations/{locationID}
+    - openapi/_original/reputation-api-openapi.yml#POST /v3/locations

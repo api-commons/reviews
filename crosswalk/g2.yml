@@ -1,0 +1,19 @@
+provider: g2
+apis_io: https://apis.io/providers/g2/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    - review
+    properties:
+      id: id
+      name: label
+      type: type
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/g2-api-v2-openapi.yaml#GET /api/v2/products/{product_id}/reviews
+    - openapi/_original/g2-api-v2-openapi.yaml#GET /api/v2/users/me/products/{product_id}/review
+    - openapi/_original/g2-api-v2-openapi.yaml#POST /api/v2/users/me/products/{product_id}/review
+    - openapi/_original/g2-data-solutions-openapi.yaml#GET /api/v2/data_solutions/reviews

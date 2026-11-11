@@ -1,0 +1,17 @@
+provider: shopper-approved
+apis_io: https://apis.io/providers/shopper-approved/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    properties:
+      rating: rating
+      created_at: date
+      title: headline
+      location_id: location
+      name: name
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/shopper-approved-openapi.yml#GET /reviews/{site_id}

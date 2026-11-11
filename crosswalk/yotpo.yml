@@ -1,0 +1,20 @@
+provider: yotpo
+apis_io: https://apis.io/providers/yotpo/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    properties:
+      rating: score
+      created_at: created_at
+      id: id
+      body: content
+      title: title
+      name: display_name
+      status: status
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/yotpo-openapi.yml#GET /v1/apps/{app_key}/reviews
+    - openapi/_original/yotpo-openapi.yml#POST /v1/widget/reviews

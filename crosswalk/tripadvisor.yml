@@ -1,0 +1,19 @@
+provider: tripadvisor
+apis_io: https://apis.io/providers/tripadvisor/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    properties:
+      rating: rating
+      id: id
+      body: text
+      author_name: user
+      title: title
+      language: lang
+      location_id: location_id
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/tripadvisor-content-api-openapi.yml#GET /location/{locationId}/reviews

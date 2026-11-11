@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/reviews/main/schema/review.json",
+  "title": "Review",
+  "description": "The common review in Reviews, distilled from 22 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "rating": {
+      "type": "integer",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.682,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "rating",
+        "starRating",
+        "stars",
+        "score"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.636,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "date",
+        "created_at",
+        "created",
+        "reviewDate",
+        "createdAt",
+        "createdDate",
+        "createTime"
+      ],
+      "format": "date-time"
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.636,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "id",
+        "reviewId",
+        "externalId"
+      ]
+    },
+    "body": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.545,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "content",
+        "comment",
+        "text",
+        "body"
+      ]
+    },
+    "author_name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "authorName",
+        "author",
+        "reviewerName",
+        "reviewer",
+        "user"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.455,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "title",
+        "headline",
+        "summary"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.318,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "source",
+        "platform"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.318,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "updated_at",
+        "updatedAt",
+        "updated",
+        "modified",
+        "updateTime"
+      ],
+      "format": "date-time"
+    },
+    "language": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.273,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "language",
+        "lang",
+        "Locale",
+        "locale"
+      ]
+    },
+    "location_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.227,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "locationId",
+        "place_id",
+        "location",
+        "location_id"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.227,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "name",
+        "label",
+        "display_name"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.227,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "status",
+        "state",
+        "published"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.227,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "type"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "reviews",
+    "concept": "review",
+    "providers": 22,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/reviews/main/schema/review_reply.json",
+  "title": "Review Reply",
+  "description": "The common review_reply in Reviews, distilled from 6 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "body": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "content",
+        "comment",
+        "body"
+      ]
+    }
+  },
+  "required": [],
+  "x-commons": {
+    "context": "reviews",
+    "concept": "review_reply",
+    "providers": 6,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

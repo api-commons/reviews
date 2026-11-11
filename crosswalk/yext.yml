@@ -1,0 +1,57 @@
+provider: yext
+apis_io: https://apis.io/providers/yext/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    properties:
+      rating: rating
+      created_at: date
+      id:
+      - id
+      - externalId
+      - reviewId
+      body:
+      - content
+      - comment
+      author_name: authorName
+      title: title
+      location_id: locationId
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/yext-knowledge-api-openapi.yml#GET /accounts/{accountId}/reviews
+    - openapi/_original/yext-knowledge-api-openapi.yml#GET /accounts/{accountId}/reviews/{reviewId}
+    - openapi/_original/yext-knowledge-api-openapi.yml#POST /accounts/{accountId}/reviews
+    - openapi/_original/yext-knowledge-api-openapi.yml#PUT /accounts/{accountId}/reviews/{reviewId}
+    - openapi/_original/yext-publisher-listings-api-openapi.yml#GET /listings/reviews
+  review_reply:
+    path_segment:
+    - comments
+    properties:
+      body: content
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/yext-knowledge-api-openapi.yml#DELETE /accounts/{accountId}/reviews/{reviewId}/comments/{commentId}
+    - openapi/_original/yext-knowledge-api-openapi.yml#POST /accounts/{accountId}/reviews/{reviewId}/comments
+    - openapi/_original/yext-knowledge-api-openapi.yml#PUT /accounts/{accountId}/reviews/{reviewId}/comments/{commentId}
+  reviewed_location:
+    path_segment:
+    - locations
+    properties:
+      address: address
+      city: city
+      description: description
+      metadata: customFields
+      phone: phone
+      id: id
+      website_url: websiteUrl
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/yext-knowledge-api-openapi.yml#GET /accounts/{accountId}/locations
+    - openapi/_original/yext-knowledge-api-openapi.yml#GET /accounts/{accountId}/locations/{locationId}
+    - openapi/_original/yext-knowledge-api-openapi.yml#POST /accounts/{accountId}/locations
+    - openapi/_original/yext-knowledge-api-openapi.yml#PUT /accounts/{accountId}/locations/{locationId}
+    - openapi/_original/yext-live-api-openapi.yml#GET /accounts/{accountId}/locations

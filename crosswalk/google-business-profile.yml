@@ -1,0 +1,42 @@
+provider: google-business-profile
+apis_io: https://apis.io/providers/google-business-profile/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    properties:
+      rating: starRating
+      created_at: createTime
+      id: reviewId
+      body: comment
+      author_name: reviewer
+      updated_at: updateTime
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/openapi.yml#GET /accounts/{accountId}/locations/{locationId}/reviews
+  review_reply:
+    path_segment:
+    - reply
+    properties:
+      body: comment
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/openapi.yml#PUT /accounts/{accountId}/locations/{locationId}/reviews/{reviewId}/reply
+  reviewed_location:
+    path_segment:
+    - locations
+    properties:
+      name: name
+      address: address
+      metadata: metadata
+      website_url: websiteUrl
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/openapi.yml#DELETE /accounts/{accountId}/locations/{locationId}
+    - openapi/_original/openapi.yml#GET /accounts/{accountId}/locations
+    - openapi/_original/openapi.yml#GET /accounts/{accountId}/locations/{locationId}
+    - openapi/_original/openapi.yml#PATCH /accounts/{accountId}/locations/{locationId}
+    - openapi/_original/openapi.yml#POST /accounts/{accountId}/locations

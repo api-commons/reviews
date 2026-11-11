@@ -1,0 +1,211 @@
+openapi: 3.1.0
+info:
+  title: Reviews (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Reviews interface, distilled from the harvested OpenAPI of 42 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /reviews:
+    get:
+      operationId: listReviews
+      summary: List reviews
+      tags:
+      - Reviews
+      x-commons-tier: core
+      x-commons-share: 0.846
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Review'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createReview
+      summary: Create a review
+      tags:
+      - Reviews
+      x-commons-tier: extended
+      x-commons-share: 0.346
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /reviews/{review_id}:
+    parameters:
+    - $ref: '#/components/parameters/review_id'
+    get:
+      operationId: getReview
+      summary: Get a review
+      tags:
+      - Reviews
+      x-commons-tier: extended
+      x-commons-share: 0.385
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+  /reviews/{review_id}/replies:
+    parameters:
+    - $ref: '#/components/parameters/review_id'
+    post:
+      operationId: createReviewReply
+      summary: Create a review reply
+      tags:
+      - Review Replies
+      x-commons-tier: core
+      x-commons-share: 0.571
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id002
+                $ref: '#/components/schemas/ReviewReply'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /review-locations:
+    get:
+      operationId: listReviewedLocations
+      summary: List review locations
+      tags:
+      - Reviewed Locations
+      x-commons-tier: core
+      x-commons-share: 0.875
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/ReviewedLocation'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createReviewedLocation
+      summary: Create a reviewed location
+      tags:
+      - Reviewed Locations
+      x-commons-tier: core
+      x-commons-share: 0.875
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /review-locations/{reviewed_location_id}:
+    parameters:
+    - $ref: '#/components/parameters/reviewed_location_id'
+    get:
+      operationId: getReviewedLocation
+      summary: Get a reviewed location
+      tags:
+      - Reviewed Locations
+      x-commons-tier: core
+      x-commons-share: 0.625
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    patch:
+      operationId: updateReviewedLocation
+      summary: Update a reviewed location
+      tags:
+      - Reviewed Locations
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+    delete:
+      operationId: deleteReviewedLocation
+      summary: Delete a reviewed location
+      tags:
+      - Reviewed Locations
+      x-commons-tier: extended
+      x-commons-share: 0.375
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+components:
+  schemas:
+    Review:
+      $ref: ./schema/review.json
+    ReviewReply:
+      $ref: ./schema/review_reply.json
+    ReviewedLocation:
+      $ref: ./schema/reviewed_location.json
+  parameters:
+    review_id:
+      name: review_id
+      in: path
+      required: true
+      schema:
+        type: string
+    review_reply_id:
+      name: review_reply_id
+      in: path
+      required: true
+      schema:
+        type: string
+    reviewed_location_id:
+      name: reviewed_location_id
+      in: path
+      required: true
+      schema:
+        type: string

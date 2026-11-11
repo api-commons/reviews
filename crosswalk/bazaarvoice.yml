@@ -1,0 +1,30 @@
+provider: bazaarvoice
+apis_io: https://apis.io/providers/bazaarvoice/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    - review
+    properties:
+      created_at: created
+      id: id
+      updated_at: updated
+      language: Locale
+      type: type
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/bazaarvoice-content-search-openapi.json#GET /reviews/{legacyInternalId}
+    - openapi/_original/bazaarvoice-content-search-openapi.json#GET /{clientId}/reviews/{legacyInternalId}
+    - openapi/_original/bazaarvoice-content-search-openapi.json#POST /reviews
+    - openapi/_original/bazaarvoice-content-search-openapi.json#POST /{clientId}/reviews
+    - openapi/_original/bazaarvoice-conversations-display-openapi.json#GET /data/reviews.json
+  review_reply:
+    path_segment:
+    - responses
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/bazaarvoice-response-count-openapi.json#POST /response/v1/clientResponses/reviews/-/responses
+    - openapi/_original/bazaarvoice-response-count-openapi.yml#POST /response/v1/clientResponses/reviews/-/responses

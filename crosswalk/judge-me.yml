@@ -1,0 +1,25 @@
+provider: judge-me
+apis_io: https://apis.io/providers/judge-me/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    properties:
+      rating: rating
+      created_at: created_at
+      id: id
+      body: body
+      author_name: reviewer
+      title: title
+      source:
+      - source
+      - platform
+      updated_at: updated_at
+      name: name
+      status: published
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/judge-me-openapi.yml#GET /reviews
+    - openapi/_original/judge-me-openapi.yml#POST /reviews

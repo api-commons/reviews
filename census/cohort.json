@@ -1,0 +1,361 @@
+[
+ {
+  "slug": "asknicely",
+  "specs": [
+   "openapi/_original/asknicely-inapp-openapi.yml",
+   "openapi/_original/asknicely-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bazaarvoice",
+  "specs": [
+   "openapi/_original/bazaarvoice-authentic-discovery-openapi.json",
+   "openapi/_original/bazaarvoice-authentic-discovery-openapi.yml",
+   "openapi/_original/bazaarvoice-content-search-openapi.json",
+   "openapi/_original/bazaarvoice-conversations-display-openapi.json",
+   "openapi/_original/bazaarvoice-conversations-display-openapi.yml",
+   "openapi/_original/bazaarvoice-conversations-submission-openapi.json",
+   "openapi/_original/bazaarvoice-conversations-submission-openapi.yml",
+   "openapi/_original/bazaarvoice-displayable-content-export-openapi.json",
+   "openapi/_original/bazaarvoice-displayable-content-export-openapi.yml",
+   "openapi/_original/bazaarvoice-notifications-subscriptions-openapi.json",
+   "openapi/_original/bazaarvoice-notifications-subscriptions-openapi.yml",
+   "openapi/_original/bazaarvoice-product-sentiment-export-openapi.json",
+   "openapi/_original/bazaarvoice-product-sentiment-export-openapi.yml",
+   "openapi/_original/bazaarvoice-product-sentiment-openapi.json",
+   "openapi/_original/bazaarvoice-product-sentiment-openapi.yml",
+   "openapi/_original/bazaarvoice-response-count-openapi.json",
+   "openapi/_original/bazaarvoice-response-count-openapi.yml",
+   "openapi/_original/bazaarvoice-response-openapi.json",
+   "openapi/_original/bazaarvoice-response-openapi.yml",
+   "openapi/_original/bazaarvoice-social-commerce-media-openapi.json",
+   "openapi/_original/bazaarvoice-social-commerce-media-openapi.yml",
+   "openapi/_original/bazaarvoice-transactions-openapi.json",
+   "openapi/_original/bazaarvoice-transactions-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bezero-carbon",
+  "specs": [
+   "openapi/_original/bezero-carbon-ratings-openapi.yml"
+  ]
+ },
+ {
+  "slug": "birdeye",
+  "specs": [
+   "openapi/_original/birdeye-birdeye-api-openapi.yml",
+   "openapi/_original/birdeye-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "cargurus-dealer",
+  "specs": [
+   "openapi/_original/cargurus-dealer-openapi.yml"
+  ]
+ },
+ {
+  "slug": "das-technology",
+  "specs": [
+   "openapi/_original/das-technology-daswebapi-v1-openapi.yml",
+   "openapi/_original/das-technology-daswebapi-v1-swagger.json",
+   "openapi/_original/das-technology-daswebapi-v2-openapi.yml",
+   "openapi/_original/das-technology-daswebapi-v2-swagger.json"
+  ]
+ },
+ {
+  "slug": "edmunds",
+  "specs": [
+   "openapi/_original/edmunds-cars-openapi.yaml",
+   "openapi/_original/edmunds-cars-openapi.yml"
+  ]
+ },
+ {
+  "slug": "etsy",
+  "specs": [
+   "openapi/_original/etsy-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "foursquare",
+  "specs": [
+   "openapi/_original/foursquare-places-openapi.yml"
+  ]
+ },
+ {
+  "slug": "g2",
+  "specs": [
+   "openapi/_original/g2-api-v2-openapi.yaml",
+   "openapi/_original/g2-chatgpt-plugin-openapi.json",
+   "openapi/_original/g2-data-solutions-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "goodays",
+  "specs": [
+   "openapi/_original/goodays-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "google-business-profile",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "imdb-api",
+  "specs": [
+   "openapi/_original/imdb-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "judge-me",
+  "specs": [
+   "openapi/_original/judge-me-openapi.yml"
+  ]
+ },
+ {
+  "slug": "karrio",
+  "specs": [
+   "openapi/_original/karrio-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lafourchette",
+  "specs": [
+   "openapi/_original/lafourchette-b2b-api-openapi.yml",
+   "openapi/_original/lafourchette-pos-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "listings-api",
+  "specs": [
+   "openapi/_original/listings-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "litescrape",
+  "specs": [
+   "openapi/_original/litescrape-agents-openapi.json",
+   "openapi/_original/litescrape-openapi.yml"
+  ]
+ },
+ {
+  "slug": "localclarity",
+  "specs": [
+   "openapi/_original/localclarity-apidoc-api_data.json",
+   "openapi/_original/localclarity-apidoc-api_project.json"
+  ]
+ },
+ {
+  "slug": "luma-health",
+  "specs": [
+   "openapi/_original/luma-health-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "new-york-times-company",
+  "specs": [
+   "openapi/_original/archive-api-openapi.yml",
+   "openapi/_original/article-search-v2-openapi.yml",
+   "openapi/_original/books-api-openapi.yml",
+   "openapi/_original/community-api-v3-openapi.yml",
+   "openapi/_original/geo-api-v2-openapi.yml",
+   "openapi/_original/most-popular-api-v2-openapi.yml",
+   "openapi/_original/movie-reviews-v2-openapi.yml",
+   "openapi/_original/semantic-api-openapi.yml",
+   "openapi/_original/times-tags-v3-openapi.yml",
+   "openapi/_original/timeswire-v3-openapi.yml",
+   "openapi/_original/top-stories-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "omdb",
+  "specs": [
+   "openapi/_original/omdb-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "podium",
+  "specs": [
+   "openapi/_original/podium-accounts-openapi-original.json",
+   "openapi/_original/podium-accounts-openapi.yml",
+   "openapi/_original/podium-appointments-openapi-original.json",
+   "openapi/_original/podium-appointments-openapi.yml",
+   "openapi/_original/podium-campaigns-openapi-original.json",
+   "openapi/_original/podium-campaigns-openapi.yml",
+   "openapi/_original/podium-contacts-openapi-original.json",
+   "openapi/_original/podium-contacts-openapi.yml",
+   "openapi/_original/podium-conversations-openapi-original.json",
+   "openapi/_original/podium-conversations-openapi.yml",
+   "openapi/_original/podium-feedback-surveys-openapi-original.json",
+   "openapi/_original/podium-feedback-surveys-openapi.yml",
+   "openapi/_original/podium-messenger-openapi-original.json",
+   "openapi/_original/podium-messenger-openapi.yml",
+   "openapi/_original/podium-payments-openapi-original.json",
+   "openapi/_original/podium-payments-openapi.yml",
+   "openapi/_original/podium-phones-openapi-original.json",
+   "openapi/_original/podium-phones-openapi.yml",
+   "openapi/_original/podium-products-openapi-original.json",
+   "openapi/_original/podium-products-openapi.yml",
+   "openapi/_original/podium-reviews-openapi-original.json",
+   "openapi/_original/podium-reviews-openapi.yml",
+   "openapi/_original/podium-webhooks-openapi-original.json",
+   "openapi/_original/podium-webhooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "reefapi",
+  "specs": [
+   "openapi/_original/reefapi-openapi.json"
+  ]
+ },
+ {
+  "slug": "reflektive",
+  "specs": [
+   "openapi/_original/reflektive-reflektive-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "reputation",
+  "specs": [
+   "openapi/_original/reputation-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "reviews-io",
+  "specs": [
+   "openapi/_original/reviews-io-openapi.yml"
+  ]
+ },
+ {
+  "slug": "revinate",
+  "specs": [
+   "openapi/_original/revinate-porter-api-docs-resource-listing.json",
+   "openapi/_original/revinate-porter-hotel-sets-swagger12.json",
+   "openapi/_original/revinate-porter-hotels-swagger12.json",
+   "openapi/_original/revinate-porter-languages-swagger12.json",
+   "openapi/_original/revinate-porter-openapi.yml",
+   "openapi/_original/revinate-porter-review-sites-swagger12.json",
+   "openapi/_original/revinate-porter-reviews-swagger12.json",
+   "openapi/_original/revinate-porter-widget-reviews-swagger12.json"
+  ]
+ },
+ {
+  "slug": "rottentomatoes",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "serper",
+  "specs": [
+   "openapi/_original/serper-google-search-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "shopper-approved",
+  "specs": [
+   "openapi/_original/shopper-approved-openapi.yml"
+  ]
+ },
+ {
+  "slug": "signal-ai",
+  "specs": [
+   "openapi/_original/signal-ai-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "stamped",
+  "specs": [
+   "openapi/_original/stamped-loyalty-operations-openapi.json",
+   "openapi/_original/stamped-merchant-data-openapi.json"
+  ]
+ },
+ {
+  "slug": "stayingapi",
+  "specs": [
+   "openapi/_original/stayingapi-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "synup",
+  "specs": [
+   "openapi/_original/synup-api-openapi.yml",
+   "openapi/_original/synup-webhooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tmdb",
+  "specs": [
+   "openapi/_original/the-movie-database-account-api-openapi.yml",
+   "openapi/_original/the-movie-database-authentication-api-openapi.yml",
+   "openapi/_original/the-movie-database-certification-api-openapi.yml",
+   "openapi/_original/the-movie-database-collection-api-openapi.yml",
+   "openapi/_original/the-movie-database-company-api-openapi.yml",
+   "openapi/_original/the-movie-database-configuration-api-openapi.yml",
+   "openapi/_original/the-movie-database-credit-api-openapi.yml",
+   "openapi/_original/the-movie-database-discover-api-openapi.yml",
+   "openapi/_original/the-movie-database-find-api-openapi.yml",
+   "openapi/_original/the-movie-database-genre-api-openapi.yml",
+   "openapi/_original/the-movie-database-guest-session-api-openapi.yml",
+   "openapi/_original/the-movie-database-keyword-api-openapi.yml",
+   "openapi/_original/the-movie-database-list-api-openapi.yml",
+   "openapi/_original/the-movie-database-movie-api-openapi.yml",
+   "openapi/_original/the-movie-database-network-api-openapi.yml",
+   "openapi/_original/the-movie-database-person-api-openapi.yml",
+   "openapi/_original/the-movie-database-review-api-openapi.yml",
+   "openapi/_original/the-movie-database-search-api-openapi.yml",
+   "openapi/_original/the-movie-database-trending-api-openapi.yml",
+   "openapi/_original/the-movie-database-tv-api-openapi.yml",
+   "openapi/_original/the-movie-database-watch-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tripadvisor",
+  "specs": [
+   "openapi/_original/tripadvisor-content-api-openapi.yml",
+   "openapi/_original/tripadvisor-hotel-availability-check-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "trustpilot",
+  "specs": [
+   "openapi/_original/trustpilot-business-units-openapi.yml",
+   "openapi/_original/trustpilot-invitation-openapi.yml",
+   "openapi/_original/trustpilot-product-reviews-openapi.yml",
+   "openapi/_original/trustpilot-service-reviews-openapi.yml"
+  ]
+ },
+ {
+  "slug": "trustradius",
+  "specs": [
+   "openapi/_original/trustradius-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "weave",
+  "specs": [
+   "openapi/_original/weave-openapi.yml"
+  ]
+ },
+ {
+  "slug": "yext",
+  "specs": [
+   "openapi/_original/yext-admin-api-openapi.yml",
+   "openapi/_original/yext-answers-api-openapi.yml",
+   "openapi/_original/yext-chat-api-openapi.yml",
+   "openapi/_original/yext-events-api-openapi.yml",
+   "openapi/_original/yext-knowledge-api-openapi.yml",
+   "openapi/_original/yext-live-api-openapi.yml",
+   "openapi/_original/yext-publisher-ecl-api-openapi.yml",
+   "openapi/_original/yext-publisher-listings-api-openapi.yml",
+   "openapi/_original/yext-publisher-tracking-pixel-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "yotpo",
+  "specs": [
+   "openapi/_original/yotpo-openapi.yml"
+  ]
+ }
+]

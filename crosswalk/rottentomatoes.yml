@@ -1,0 +1,12 @@
+provider: rottentomatoes
+apis_io: https://apis.io/providers/rottentomatoes/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/openapi.json#GET /movies/{id}/reviews.json

@@ -1,0 +1,20 @@
+provider: tmdb
+apis_io: https://apis.io/providers/tmdb/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    - review
+    properties:
+      created_at: created_at
+      id: id
+      body: content
+      author_name: author
+      updated_at: updated_at
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/the-movie-database-movie-api-openapi.yml#GET /3/movie/{movie_id}/reviews
+    - openapi/_original/the-movie-database-review-api-openapi.yml#GET /3/review/{review_id}
+    - openapi/_original/the-movie-database-tv-api-openapi.yml#GET /3/tv/{series_id}/reviews

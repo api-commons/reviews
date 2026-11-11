@@ -1,0 +1,16 @@
+provider: new-york-times-company
+apis_io: https://apis.io/providers/new-york-times-company/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    properties:
+      title:
+      - summary
+      - headline
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/books-api-openapi.yml#GET /reviews.json
+    - openapi/_original/movie-reviews-v2-openapi.yml#GET /reviews/{type}.json

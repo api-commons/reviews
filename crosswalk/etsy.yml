@@ -1,0 +1,15 @@
+provider: etsy
+apis_io: https://apis.io/providers/etsy/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    properties:
+      rating: rating
+      language: language
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/etsy-openapi-original.yml#GET /v3/application/listings/{listing_id}/reviews
+    - openapi/_original/etsy-openapi-original.yml#GET /v3/application/shops/{shop_id}/reviews

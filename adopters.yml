@@ -1,0 +1,148 @@
+context: reviews
+generated: '2026-11-10'
+adopters:
+- provider: bazaarvoice
+  apis_io: https://apis.io/providers/bazaarvoice/
+  crosswalk: crosswalk/bazaarvoice.yml
+  concepts:
+  - review
+  - review_reply
+- provider: birdeye
+  apis_io: https://apis.io/providers/birdeye/
+  crosswalk: crosswalk/birdeye.yml
+  concepts:
+  - review
+  - reviewed_location
+- provider: das-technology
+  apis_io: https://apis.io/providers/das-technology/
+  crosswalk: crosswalk/das-technology.yml
+  concepts:
+  - review
+- provider: etsy
+  apis_io: https://apis.io/providers/etsy/
+  crosswalk: crosswalk/etsy.yml
+  concepts:
+  - review
+- provider: g2
+  apis_io: https://apis.io/providers/g2/
+  crosswalk: crosswalk/g2.yml
+  concepts:
+  - review
+- provider: google-business-profile
+  apis_io: https://apis.io/providers/google-business-profile/
+  crosswalk: crosswalk/google-business-profile.yml
+  concepts:
+  - review
+  - review_reply
+  - reviewed_location
+- provider: judge-me
+  apis_io: https://apis.io/providers/judge-me/
+  crosswalk: crosswalk/judge-me.yml
+  concepts:
+  - review
+- provider: lafourchette
+  apis_io: https://apis.io/providers/lafourchette/
+  crosswalk: crosswalk/lafourchette.yml
+  concepts:
+  - review
+  - review_reply
+- provider: listings-api
+  apis_io: https://apis.io/providers/listings-api/
+  crosswalk: crosswalk/listings-api.yml
+  concepts:
+  - review
+  - reviewed_location
+- provider: litescrape
+  apis_io: https://apis.io/providers/litescrape/
+  crosswalk: crosswalk/litescrape.yml
+  concepts:
+  - review
+- provider: new-york-times-company
+  apis_io: https://apis.io/providers/new-york-times-company/
+  crosswalk: crosswalk/new-york-times-company.yml
+  concepts:
+  - review
+- provider: podium
+  apis_io: https://apis.io/providers/podium/
+  crosswalk: crosswalk/podium.yml
+  concepts:
+  - review
+  - review_reply
+  - reviewed_location
+- provider: reefapi
+  apis_io: https://apis.io/providers/reefapi/
+  crosswalk: crosswalk/reefapi.yml
+  concepts:
+  - review
+  - reviewed_location
+- provider: reflektive
+  apis_io: https://apis.io/providers/reflektive/
+  crosswalk: crosswalk/reflektive.yml
+  concepts:
+  - review
+- provider: reputation
+  apis_io: https://apis.io/providers/reputation/
+  crosswalk: crosswalk/reputation.yml
+  concepts:
+  - review
+  - review_reply
+  - reviewed_location
+- provider: reviews-io
+  apis_io: https://apis.io/providers/reviews-io/
+  crosswalk: crosswalk/reviews-io.yml
+  concepts:
+  - review
+- provider: revinate
+  apis_io: https://apis.io/providers/revinate/
+  crosswalk: crosswalk/revinate.yml
+  concepts:
+  - review
+- provider: rottentomatoes
+  apis_io: https://apis.io/providers/rottentomatoes/
+  crosswalk: crosswalk/rottentomatoes.yml
+  concepts:
+  - review
+- provider: shopper-approved
+  apis_io: https://apis.io/providers/shopper-approved/
+  crosswalk: crosswalk/shopper-approved.yml
+  concepts:
+  - review
+- provider: stayingapi
+  apis_io: https://apis.io/providers/stayingapi/
+  crosswalk: crosswalk/stayingapi.yml
+  concepts:
+  - review
+- provider: synup
+  apis_io: https://apis.io/providers/synup/
+  crosswalk: crosswalk/synup.yml
+  concepts:
+  - review
+  - reviewed_location
+- provider: tmdb
+  apis_io: https://apis.io/providers/tmdb/
+  crosswalk: crosswalk/tmdb.yml
+  concepts:
+  - review
+- provider: tripadvisor
+  apis_io: https://apis.io/providers/tripadvisor/
+  crosswalk: crosswalk/tripadvisor.yml
+  concepts:
+  - review
+- provider: trustpilot
+  apis_io: https://apis.io/providers/trustpilot/
+  crosswalk: crosswalk/trustpilot.yml
+  concepts:
+  - review
+  - review_reply
+- provider: yext
+  apis_io: https://apis.io/providers/yext/
+  crosswalk: crosswalk/yext.yml
+  concepts:
+  - review
+  - review_reply
+  - reviewed_location
+- provider: yotpo
+  apis_io: https://apis.io/providers/yotpo/
+  crosswalk: crosswalk/yotpo.yml
+  concepts:
+  - review

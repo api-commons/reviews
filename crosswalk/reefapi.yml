@@ -1,0 +1,35 @@
+provider: reefapi
+apis_io: https://apis.io/providers/reefapi/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    properties:
+      rating: rating
+      id: id
+      source: source
+      language:
+      - language
+      - lang
+      - locale
+      location_id: place_id
+      type: type
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/reefapi-openapi.json#POST /agoda/v1/reviews
+    - openapi/_original/reefapi-openapi.json#POST /aliexpress/v1/reviews
+    - openapi/_original/reefapi-openapi.json#POST /amazon/v1/product/reviews
+    - openapi/_original/reefapi-openapi.json#POST /amazon/v1/seller/reviews
+    - openapi/_original/reefapi-openapi.json#POST /app-store/v1/reviews
+  reviewed_location:
+    path_segment:
+    - locations
+    - location
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/reefapi-openapi.json#POST /hemnet/v1/location
+    - openapi/_original/reefapi-openapi.json#POST /olx/v1/locations
+    - openapi/_original/reefapi-openapi.json#POST /tiktok-creative-center/v1/locations

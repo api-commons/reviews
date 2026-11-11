@@ -1,0 +1,12 @@
+provider: reflektive
+apis_io: https://apis.io/providers/reflektive/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/reflektive-reflektive-api-openapi.yml#POST /v1/reports/reviews

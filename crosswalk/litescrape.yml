@@ -1,0 +1,16 @@
+provider: litescrape
+apis_io: https://apis.io/providers/litescrape/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/litescrape-agents-openapi.json#GET /api/apple/maps/reviews
+    - openapi/_original/litescrape-agents-openapi.json#GET /api/google/reviews
+    - openapi/_original/litescrape-agents-openapi.json#GET /api/tripadvisor/reviews
+    - openapi/_original/litescrape-agents-openapi.json#GET /api/yelp/reviews
+    - openapi/_original/litescrape-openapi.yml#GET /api/apple/maps/reviews

@@ -1,0 +1,16 @@
+provider: reviews-io
+apis_io: https://apis.io/providers/reviews-io/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    - review
+    properties:
+      rating: rating
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/reviews-io-openapi.yml#GET /merchant/reviews
+    - openapi/_original/reviews-io-openapi.yml#GET /product/review
+    - openapi/_original/reviews-io-openapi.yml#GET /reviews

@@ -1,0 +1,34 @@
+provider: listings-api
+apis_io: https://apis.io/providers/listings-api/
+context: reviews
+generated: '2026-11-10'
+concepts:
+  review:
+    path_segment:
+    - reviews
+    properties:
+      rating: rating
+      created_at: date
+      id: id
+      body: content
+      author_name: authorName
+      title: title
+      source: source
+      location_id: locationId
+      type: type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/listings-api-openapi.yaml#GET /api/v4/locations/{locationId}/reviews
+  reviewed_location:
+    path_segment:
+    - locations
+    properties:
+      name: name
+      city: city
+      description: description
+      phone: phone
+      postal_code: postalCode
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/listings-api-openapi.yaml#GET /api/v4/locations
+    - openapi/_original/listings-api-openapi.yaml#POST /api/v4/locations
