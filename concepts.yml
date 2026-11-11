@@ -61,3 +61,6 @@ decisions:
   - "Review locations are `/review-locations`: `/locations` is a store, a work site or a
     restaurant in other contexts."
   - "Review requests were measured and dropped (1 provider)."
+standards:
+  - standard: schemaorg-30.1
+    concepts: {review: [Review]}
