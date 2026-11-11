@@ -1,7 +1,7 @@
 provider: revinate
 apis_io: https://apis.io/providers/revinate/
 context: reviews
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   review:
     path_segment:

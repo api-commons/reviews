@@ -16,7 +16,7 @@ generated. Every number below is a count of providers.
 | review_reply | 7 | 6 | body 67% | responses 3, reply 3, comments 1 |
 | reviewed_location | 8 | 7 | name 71%, address 57%, city 57%, description 57%, metadata 57%, phone 57% | locations 7, location 2, business 1 |
 
-Cohort: 42 providers with harvested OpenAPI, 26 crosswalks. Of the providers exposing a review: 35% create, 85% list, 38% fetch, 4% update, 0% delete. Generated 2026-11-10 by build.py.
+Cohort: 42 providers with harvested OpenAPI, 26 crosswalks. Of the providers exposing a review: 35% create, 85% list, 38% fetch, 4% update, 0% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The

@@ -1,7 +1,7 @@
 provider: judge-me
 apis_io: https://apis.io/providers/judge-me/
 context: reviews
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   review:
     path_segment:
